@@ -1,3 +1,5 @@
+update 0828
+
 the first step of building this App
 
 # step1: 先把基本react scaffold寫出來
