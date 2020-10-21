@@ -5,8 +5,7 @@ import { signIn, signOut } from '../actions';
 class GoogleAuth extends React.Component {
   componentDidMount() {
     window.gapi.load('client:auth2', () => {
-      window.gapi.client
-        .init({
+      window.gapi.client.init({
           clientId:
             '797401886567-9cumct9mrt3v2va409rasa7fa6fq02hh.apps.googleusercontent.com',
           scope: 'email'
@@ -23,6 +22,7 @@ class GoogleAuth extends React.Component {
   onAuthChange = isSignedIn => {
     if (isSignedIn) {
       this.props.signIn(this.auth.currentUser.get().getId());
+      // 如此我們在state auth中儲存了userId
     } else {
       this.props.signOut();
     }

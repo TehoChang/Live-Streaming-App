@@ -23,13 +23,15 @@ export const signOut = () => {
   };
 };
 
-export const createStream = formValues => async (dispatch, getState) => {
-  const { userId } = getState().auth;
-  const response = await streams.post('/streams', { ...formValues, userId });
+export const createStream = formValues => {
+  return async (dispatch, getState) => {
+    const { userId } = getState().auth;
+    const response = await streams.post('/streams', { ...formValues, userId });
 
-  dispatch({ type: CREATE_STREAM, payload: response.data });
-  history.push('/');
-};
+    dispatch({ type: CREATE_STREAM, payload: response.data });
+    history.push('/');
+  };
+}
 
 export const fetchStreams = () => async dispatch => {
   const response = await streams.get('/streams');
