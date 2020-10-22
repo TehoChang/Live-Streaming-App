@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "start": "json-server -p 3001 -w db.json"
+  "scripts":{
+    "start":"json-server -p 3001 -w db.json"
   },
   "author": "",
   "license": "ISC",

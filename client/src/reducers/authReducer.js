@@ -16,13 +16,3 @@ export default (state = INTIAL_STATE, action) => {
   }
 };
 
-export default (state=INITIAL_STATE, action)=>{
-  switch(action.type){
-    case SIGN_IN:
-      return{}
-    case SIGN_OUT:
-      return{}
-    default:
-      return state
-  }
-}
