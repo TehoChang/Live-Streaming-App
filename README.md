@@ -1,14 +1,17 @@
-How do I run this project?
+How do I run this Application?
 
-1. Install Node.js
+- Install Node.js
 
-2. Download the source code from github
+- Download the source code from github
 
-3. Use command line, enter $npm init
+- Enter API folder, start the mock API
+    1 $npm install
+    2 $npm start
 
-4. $npm install
+- Enter client folder, start the React app
+    1 $npm install
+    2 $npm start
 
-5. $npm start
 
 
 
