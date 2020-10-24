@@ -1,9 +1,15 @@
-echo "#WorkWithJustin" >>
+How do I run this project?
 
-# WorkWithJustin
+1. Install Node.js
 
-git init
-git add .
-git commit -m "blabla"
+2. Download the source code from github
+
+3. Use command line, enter $npm init
+
+4. $npm install
+
+5. $npm start
+
+
 
 
